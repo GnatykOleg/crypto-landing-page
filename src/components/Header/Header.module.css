@@ -1,0 +1,128 @@
+.header {
+  padding-top: 37px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1440px) {
+  .item:first-child {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shadow {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+
+    height: 20%;
+    width: 20%;
+    background: red;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.link {
+  font-family: 'Mazzard Medium';
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--white);
+
+  transition: all 250ms linear;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--link-color);
+}
+
+.desktopLink {
+  display: none;
+  margin-right: 45px;
+  font-family: 'Mazzard Regular';
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: var(--link-desktop-color);
+  transition: all 250ms linear;
+}
+@media screen and (min-width: 1440px) {
+  .desktopLink {
+    display: block;
+  }
+}
+
+.desktopLinkButton {
+  display: none;
+
+  width: 170px;
+  height: 60px;
+  font-family: 'Mazzard Semi Bold';
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--black);
+
+  background: linear-gradient(140.6deg, #ffffff -27.18%, #dedede 126.06%);
+
+  box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+  border-radius: 10px;
+  transition: all 250ms linear;
+}
+
+@media screen and (min-width: 1440px) {
+  .desktopLinkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.desktopLink:hover,
+.desktopLink:focus {
+  color: var(--link-color);
+}
+.desktopLinkButton:hover,
+.desktopLinkButton:focus {
+  background: var(--link-hover-focus-gradient);
+}
+
+@media screen and (max-width: 1439px) {
+  .btn {
+    display: block;
+    width: 32px;
+    height: 8px;
+    border-bottom: 1.5px solid var(--white);
+    border-top: 1.5px solid var(--white);
+    background-color: transparent;
+
+    transition: all 250ms linear;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    border-color: var(--link-color);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    display: none;
+  }
+
+  .arrow {
+    margin-left: 8px;
+  }
+
+  .list {
+    display: flex;
+  }
+}

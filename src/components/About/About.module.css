@@ -1,0 +1,226 @@
+.section {
+  padding-top: 78px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 143px;
+  }
+
+  .shadowTopRigth {
+    position: absolute;
+    width: 28%;
+    height: 75%;
+    bottom: -40%;
+    right: 5px;
+
+    filter: blur(100px);
+    border-radius: 100px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 65, 218, 0.115) 0%,
+      rgba(40, 0, 153, 0.3) 100%
+    );
+    opacity: 0.7;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemTitle {
+  margin-bottom: 33px;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemTitle {
+    margin-bottom: 65px;
+  }
+}
+
+.itemTitle__text {
+  margin-bottom: 18px;
+
+  font-family: 'Mazzard Medium';
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .itemTitle__text {
+    margin-bottom: 21px;
+  }
+}
+
+.itemTitle__title {
+  max-width: 319px;
+
+  font-family: 'Mazzard Semi Bold';
+  font-size: 44px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--white);
+}
+
+@media screen and (min-width: 1440px) {
+  .itemTitle__title {
+    max-width: 919px;
+    font-family: 'Mazzard Medium';
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.itemBarsDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemBarsDesktop {
+    display: inline-block;
+    margin-right: 250px;
+  }
+}
+
+.itemBars {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemBars {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.itemText {
+  margin-bottom: 33px;
+  width: 336px;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemText {
+    margin-bottom: 44px;
+    width: 100%;
+  }
+}
+
+.itemText__title {
+  margin-bottom: 20px;
+
+  font-family: 'Mazzard Semi Bold';
+  font-size: 24px;
+  line-height: 1.8;
+  color: var(--white);
+  text-align: start;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemText__title {
+    margin-bottom: 33px;
+
+    font-family: 'Mazzard Semi Bold';
+    font-size: 30px;
+    line-height: 1.43;
+    text-align: start;
+  }
+}
+
+.itemText__container {
+  position: relative;
+  padding-left: 33px;
+}
+
+.itemText__container:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .itemText__container:nth-child(2) {
+    margin-bottom: 26px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  left: -12px;
+  top: -2px;
+}
+
+.itemText__text {
+  width: 301px;
+
+  font-family: 'Mazzard Regular';
+
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .itemText__text {
+    width: 333px;
+
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+
+.itemBtn {
+  width: 334px;
+}
+
+.btn {
+  width: 190px;
+  height: 60px;
+
+  font-family: 'Mazzard Regular';
+
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: var(--white);
+
+  background: var(--link-bg-gradient);
+  box-shadow: var(--link-box-shadow);
+  border-radius: 10px;
+  transition: all 250ms linear;
+}
+
+@media screen and (min-width: 1440px) {
+  .btn {
+    width: 205px;
+    height: 62px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--black);
+  background: var(--link-hover-focus-gradient);
+}
+
+@media screen and (min-width: 1440px) {
+  .secondListDesktopFlex {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,177 @@
+@import 'modern-normalize/modern-normalize.css';
+
+:root {
+  --primary-text-color: #aaaaaa;
+  --secondary-text-color: #e9e9e9;
+  --text-gradient: linear-gradient(90deg, #487fff, #73b5ff, #cb76ff);
+  --white: #ffffff;
+  --black: #000000;
+  --link-color: #7b93ff;
+  --border-block-color: #303030;
+  --line-color-gradient: linear-gradient(#b7b6bb, #5e5971);
+  --link-desktop-color: #f3f3f3;
+
+  --block-bg: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(48, 48, 48, 0.5) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  --block-box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+
+  --link-bg-gradient: linear-gradient(
+    140.6deg,
+    #3e6ff9 -27.18%,
+    #3e53f8 126.06%
+  );
+  --link-hover-focus-gradient: linear-gradient(
+    89.95deg,
+    #487fff -1.65%,
+    #73b5ff 51.06%,
+    #cb76ff 99.96%
+  );
+  --link-box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+}
+
+main {
+  background-image: url(./images/rings.svg);
+  background-repeat: no-repeat;
+  background-position: 0 20%;
+}
+
+/* MAX */
+
+@media screen and (max-width: 1439px) {
+  body {
+    background-image: url(./images/Pattern.svg);
+    background-size: contain;
+
+    background-repeat: no-repeat;
+  }
+}
+
+/* MIN */
+
+@media screen and (min-width: 1440px) {
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main {
+    background-position: center;
+  }
+
+  body {
+    background-image: url(./images/fullPattern.svg);
+    background-position: 0px 58px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Mazzard Regular';
+  src: url('../src/fonts/MazzardH-Regular.eot');
+  src: url('../src/fonts/MazzardH-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../src/fonts/MazzardH-Regular.woff2') format('woff2'),
+    url('../src/fonts/MazzardH-Regular.woff') format('woff'),
+    url('../src/fonts/MazzardH-Regular.ttf') format('truetype'),
+    url('../src/fonts/MazzardH-Regular.svg#MazzardH-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mazzard Medium';
+  src: url('../src/fonts/MazzardH-Medium.eot');
+  src: url('../src/fonts/MazzardH-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../src/fonts/MazzardH-Medium.woff2') format('woff2'),
+    url('../src/fonts/MazzardH-Medium.woff') format('woff'),
+    url('../src/fonts/MazzardH-Medium.ttf') format('truetype'),
+    url('../src/fonts/MazzardH-Medium.svg#MazzardH-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mazzard Semi Bold';
+  src: url('../src/fonts/MazzardH-SemiBold.eot');
+  src: url('../src/fonts/MazzardH-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../src/fonts/MazzardH-SemiBold.woff2') format('woff2'),
+    url('../src/fonts/MazzardH-SemiBold.woff') format('woff'),
+    url('../src/fonts/MazzardH-SemiBold.ttf') format('truetype'),
+    url('../src/fonts/MazzardH-SemiBold.svg#MazzardH-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
