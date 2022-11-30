@@ -1,1 +1,1 @@
-# Crypto web landing page build on React
+# Landing page build on React for crypto trading
